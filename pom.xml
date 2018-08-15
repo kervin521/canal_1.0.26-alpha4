@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <name>canal module for otter ${project.version}</name>
     <version>1.0.26-SNAPSHOT</version>
+    <description>1.0.26-alpha4</description>
     <url>https://github.com/alibaba/canal</url>
     <parent>
         <groupId>org.sonatype.oss</groupId>
@@ -307,7 +308,11 @@
                 <version>5.1.40</version>
                 <!--<scope>test</scope>-->
             </dependency>
-
+			<dependency>
+			    <groupId>io.dropwizard.metrics</groupId>
+			    <artifactId>metrics-jvm</artifactId>
+			    <version>3.2.6</version>
+			</dependency>
         </dependencies>
     </dependencyManagement>
 
